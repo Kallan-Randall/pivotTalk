@@ -1,15 +1,12 @@
 import { Text, View } from "react-native";
+import { Link } from "expo-router";
 
 export default function Index() {
+    
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Text>PivotTalk</Text>
+    <View className="flex-1 items-center justify-center">
+      <Text className=" text-3xl font-space">PivotTalk</Text>
+      <Link href="/profile">Go To Pofile</Link>
     </View>
   );
 }
